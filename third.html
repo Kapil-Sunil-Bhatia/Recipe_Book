@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Single Recipe || Final</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!-- nav  -->
+  <nav class="navbar">
+    <div class="nav-center">
+      <div class="nav-header">
+        <a href="index.html" class="nav-logo">
+          <img src="./assets/KapilRecipes.png" alt="Kapil recipes" />
+        </a>
+        <button class="nav-btn btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"> home </a>
+        <a href="about.html" class="nav-link"> about </a>
+        <a href="tags.html" class="nav-link"> tags </a>
+        <a href="recipes.html" class="nav-link"> recipes </a>
+
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn"> contact </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of nav -->
+  <main class="page">
+    <div class="recipe-page">
+      <section class="recipe-hero">
+        <img
+          src="https://www.allrecipes.com/thmb/lnuLJtbb3JfpYUD_7TD0nKGltFQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/7506229-smashed-peach-and-poblano-grilled-cheese-JD-4x3-44640-2d2ec07f67b144ac94d7aff902965de6.jpg"
+          class="img recipe-hero-img" />
+        <article class="recipe-info">
+          <h2>Smashed Peach and Poblano Grilled Cheese</h2>
+          <p>
+            A German Sanwich (a.k.a. a Dutch baby) is similar to a large Yorkshire pudding. Unlike other types of
+            Sanwichs, German Sanwichs are baked in the oven instead of fried on the stove. They also don’t contain
+            leaving ingredients, such as baking powder or baking soda.
+          </p>
+          <div class="recipe-icons">
+            <article>
+              <i class="fas fa-clock"></i>
+              <h5>prep time</h5>
+              <p>15 min.</p>
+            </article>
+            <article>
+              <i class="far fa-clock"></i>
+              <h5>cook time</h5>
+              <p>5 min.</p>
+            </article>
+            <article>
+              <i class="fas fa-user-friends"></i>
+              <h5>serving</h5>
+              <p>2 servings</p>
+            </article>
+          </div>
+          <p class="recipe-tags">
+            Tags :
+            <a href="tag-template.html">breakfast</a>
+            <a href="tag-template.html">Sanwiches</a>
+            <a href="tag-template.html">food</a>
+          </p>
+        </article>
+      </section>
+      <!-- content -->
+      <section class="recipe-content">
+        <article>
+          <h4>instructions</h4>
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 1</p>
+              <div></div>
+            </header>
+            <p>
+              Sprinkle cut sides of peach halves with ground chile (if using). Using a potato masher, a flat-bottom
+              heavy skillet, or the flat side of a meat mallet, gently smash peach halves to 1/2-inch thickness.
+          </div>
+          <!-- end of single instruction -->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 2</p>
+              <div></div>
+            </header>
+            <p>
+              Top 2 bread slices with Cheddar cheese. Layer 2 peach halves, half of the poblano strips, and 2 slices
+              bacon on top of the cheese. Top with remaining bread slices. Butter both sides of each sandwich. </p>
+          </div>
+          <!-- end of single instruction -->
+          <!-- single instruction -->
+          <div class="single-instruction">
+            <header>
+              <p>step 3</p>
+              <div></div>
+            </header>
+            <p>
+              Heat a skillet over medium heat. Add sandwiches and cook, turning halfway through, until bread is toasted
+              and cheese melts, 4 to 6 minutes. </p>
+          </div>
+          <!-- end of single instruction -->
+        </article>
+        <article class="second-column">
+          <div>
+            <h4>ingredients</h4>
+
+            <p class="single-ingredient"> 2 peaches, halved
+            </p>
+            <p class="single-ingredient"> 1/2 teaspoon ground ancho chile pepper (optional)
+            </p>
+            <p class="single-ingredient"> 4 slices sourdough bread
+            </p>
+            <p class="single-ingredient"> 3 ounces sliced sharp white Cheddar cheese
+            </p>
+            <p class="single-ingredient"> 1 large poblano pepper, roasted and cut into strips
+            </p>
+            <p class="single-ingredient"> 4 slices crisp-cooked bacon
+            </p>
+            <p class="single-ingredient"> 2 tablespoons butter, softened
+            </p>
+          </div>
+
+        </article>
+      </section>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="page-footer">
+    <p>
+      &copy; <span id="date"></span>
+      <span class="footer-logo">KapilRecipes</span>
+
+    </p>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

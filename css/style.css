@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: 'Open Sans', Arial, sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+section {
+    background-color: #bcbcbc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+img{
+    height: 100px;
+}
+h2 {
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #645cff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: #645cff;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden; /* Ensure images don't overflow */
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+img.recipe-image {
+    width: 100%; /*Make sure the image takes full width*/
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#recipe-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #f9c2c2;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    position: relative;
+    overflow-y: auto; /* Add overflow-y for a scroll */
+    animation: fadeInUp 0.5s ease-in-out; /* Fade-in and slide-up animation */
+}
+.modal-content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal-content p {
+    max-height: 150px; /* Set a maximum height for the steps section */
+    overflow-y: auto; /* Enable scrolling if the content exceeds the maximum height */
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#search-results {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    max-height: 500px; /* Limit the maximum height and add overflow-y for a scroll */
+    overflow-y: auto;
+}

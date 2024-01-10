@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kapil Recipe Book</title>
+</head>
+
+<body>
+    <center>
+        <img src="./assets/KapilRecipes.png" alt="Kapil recipes" />
+    </center>
+    <a href="index.html"><button class="btn">
+            Back to home page
+        </button></a>
+    <br><br>
+    <section id="search-recipes">
+        <h2>Search Recipes</h2>
+        <form id="search-form">
+            <label for="search-query">Search :</label>
+            <input type="text" id="search-query">
+            <button type="submit">Search</button>
+        </form>
+        <ul id="search-results"></ul>
+    </section>
+    <section id="add-recipe">
+        <h2>Add Recipe</h2>
+        <form id="add-recipe-form">
+            <label for="recipe-name">Recipe Name :</label>
+            <input type="text" id="recipe-name" required>
+
+            <label for="ingredients">Ingredients :</label>
+            <textarea id="ingredients" required></textarea>
+
+            <label for="preparation-steps">Preparation Steps :</label>
+            <textarea id="preparation-steps" required></textarea>
+
+            <label for="recipe-image">Image URL :</label>
+            <input type="text" id="recipe-image">
+
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+
+    <section id="view-recipes">
+        <h2>Recipes</h2>
+        <button id="delete-all-recipes">Delete All Recipes</button>
+        <ul id="recipe-list"></ul>
+    </section>
+
+    <!-- Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span id="modalCloseBtn" class="modal-close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Your modified JavaScript code
+    </script>
+</body>
+
+</html>
