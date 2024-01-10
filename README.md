@@ -28,7 +28,7 @@ Welcome to the Recipe Book project! This web application allows users to manage 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/recipe-book.git
+   git clone https://github.com/Kapil-Sunil-Bhatia/Recipe_Book/
 2. Open the project:
   - Navigate to the project directory.
   - Open index.html in your preferred web browser.
