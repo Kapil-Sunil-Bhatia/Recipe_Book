@@ -30,8 +30,8 @@ Welcome to the Recipe Book project! This web application allows users to manage 
    ```bash
    git clone https://github.com/your-username/recipe-book.git
 2. Open the project:
-  Navigate to the project directory.
-  Open index.html in your preferred web browser.
+  - Navigate to the project directory.
+  - Open index.html in your preferred web browser.
 
 ## Usage
    
