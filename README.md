@@ -33,7 +33,7 @@ Welcome to the Recipe Book project! This web application allows users to manage 
   Navigate to the project directory.
   Open index.html in your preferred web browser.
 
-3. Usage
+## Usage
    
   - Adding a Recipe:
   Fill out the "Add Recipe" form with the recipe details.
@@ -47,3 +47,8 @@ Welcome to the Recipe Book project! This web application allows users to manage 
 
   - Deleting All Recipes:
   Click the "Delete All Recipes" button to remove all recipes.
+
+## Technologies Used
+HTML
+CSS
+JavaScript
